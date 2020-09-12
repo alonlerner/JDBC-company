@@ -4,12 +4,6 @@ public class Workers {
 
 	public static void main(String[] args) {
 		try {
-			//String url="jdbc:mysql://localhost:3307/company?useUnicode=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=EST";
-			//String uname="root";
-			//String pass="root";
-//			String url="jdbc:mysql://sql7.freemysqlhosting.net:3306/sql7359045";
-//			String uname="sql7359045";
-//			String pass="UcrhuLIuHk";
 			dbProperties dbp=new dbProperties();
 			Connection con=DriverManager.getConnection(dbp.getUrl(),dbp.getUname(),dbp.getPass());
 			Statement st1=con.createStatement();
